@@ -8,55 +8,62 @@
   </head>
   <body>
     <form>
-      <label for name="email">Email</label>
-      <input
-        type="email"
-        name="email"
-        required
-        placeholder="Inserisci la tua E-mail"
-      />
-      <br />
-      <label for name="password">Password</label>
-      <input
-        type="password"
-        name="password"
-        required
-        placeholder="Inserisci la tua Password"
-      />
-      <br />
-      <label for name="name-lastname">Nome e Cognome</label>
-      <input
-        type="text"
-        name="name-lastname"
-        required
-        placeholder="Inserisci il tuo nome e cognome"
-      />
-      <br />
-      <label for name="date-birth">Data di nascita</label>
-      <input type="date" name="date-birth" required />
-      <br />
-      <label for name="phone">Numero di telefono</label>
-      <input
-        type="tel"
-        name="phone"
-        required
-        placeholder="Inserisci il tuo numero di telefono"
-        minlength="10"
-        maxlength="13"
-      />
-      <br />
-      <label for id="plan">Scegli il piano più adatto a te</label>
-      <br />
-      <select name="plan" id="plan" required>
-        <option value="free-plan">Piano Gratuito</option>
-        <option value="base-plan">Piano Base 3,99€ al mese</option>
-        <option value="advanced-plan">Piano Intermedio 9,99€ al mese</option>
-        <option value="boss-plan">Piano Boss 14,99€ al mese</option>
-      </select>
-      <br />
-      <label for id="pro-plan">Piano PRO! +2,99€ al mese</label>
-      <input type="checkbox" id="pro-plan" />
-      <br />
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for name="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Inserisci la tua E-mail"
+        />
+        <br />
+        <label for name="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          required
+          placeholder="Inserisci la tua Password"
+        />
+        <br />
+        <label for name="name-lastname">Nome e Cognome</label>
+        <input
+          type="text"
+          name="name-lastname"
+          required
+          placeholder="Inserisci il tuo nome e cognome"
+        />
+        <br />
+        <label for name="date-birth">Data di nascita</label>
+        <input type="date" name="date-birth" required />
+        <br />
+        <label for name="phone">Numero di telefono</label>
+        <input
+          type="tel"
+          name="phone"
+          required
+          placeholder="Inserisci il tuo numero di telefono"
+          minlength="10"
+          maxlength="13"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Scegli il piano</legend>
+        <label for id="plan">Scegli il piano più adatto a te</label>
+        <br />
+        <select name="plan" id="plan" required>
+          <option value="free-plan">Piano Gratuito</option>
+          <option value="base-plan">Piano Base 3,99€ al mese</option>
+          <option value="advanced-plan">Piano Intermedio 9,99€ al mese</option>
+          <option value="boss-plan">Piano Boss 14,99€ al mese</option>
+        </select>
+        <br />
+        <label for id="pro-plan">Piano PRO! +2,99€ al mese</label>
+        <input type="checkbox" id="pro-plan" />
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Informazioni per il pagamento</legend>
       <label for id="credit-card">Numero carta di credito</label>
       <input
         type="text"
@@ -75,6 +82,7 @@
       <input type="text" name="billing-address" required />
       <label name="civic">Numero civico</label>
       <input type="text" name="civic" />
+    </fieldset>
       <br />
       <button>Invia</button>
     </form>
