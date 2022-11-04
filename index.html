@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation (Exercise 6)"</title>
+  </head>
+  <body>
+    <form>
+      <label for name="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="Inserisci la tua E-mail"
+      />
+      <br />
+      <label for name="password">Password</label>
+      <input
+        type="text"
+        name="password"
+        required
+        placeholder="Inserisci la tua Password"
+      />
+      <br />
+      <label for name="name-lastname">Nome e Cognome</label>
+      <input
+        type="text"
+        name="name-lastname"
+        required
+        placeholder="Inserisci il tuo nome e cognome"
+      />
+      <br />
+      <label for name="date-birth">Data di nascita</label>
+      <input type="date" name="date-birth" required />
+      <br />
+      <label for name="phone">Numero di telefono</label>
+      <input
+        type="text"
+        name="phone"
+        required
+        placeholder="Inserisci il tuo numero di telefono"
+      />
+      <br />
+      <label for id="plan">Scegli il piano più adatto a te</label>
+      <br />
+      <select name="plan" id="plan" required>
+        <option value="free-plan">Piano Gratuito</option>
+        <option value="base-plan">Piano Base 3,99€ al mese</option>
+        <option value="advanced-plan">Piano Intermedio 9,99€ al mese</option>
+        <option value="boss-plan">Piano Boss 14,99€ al mese</option>
+      </select>
+      <br />
+      <label for id="pro-plan">Piano PRO! +2,99€ al mese</label>
+      <input type="checkbox" id="pro-plan" />
+      <br />
+      <label for id="credit-card">Numero carta di credito</label>
+      <input
+        type="text"
+        id="credit-card"
+        placeholder="5777 8892 0000 1123"
+        required
+      />
+      <br />
+      <label for id="cvc">Inserici il CVC</label>
+      <input type="text" id="cvc" placeholder="000" required minlength="3" maxlength="3" pattern="[0-9]+"/>
+      <br />
+      <label for name="expiration-card">Scadenza della carta</label>
+      <input type="date" name="expiration-card" required />
+      <br />
+      <label for name="billing-address">Indirizzo di fatturazione</label>
+      <input type="text" name="billing-address" required />
+      <label name="civic">Numero civico</label>
+      <input type="text" name="civic" required pattern="[0-9]+"/>
+      <br />
+      <button>Invia</button>
+    </form>
+  </body>
+</html>
