@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NavBar (Exercise 7)</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <h2>NavBar</h2>
-        <ul>
-            <li><a href="/categoria/multimedia">Home</a></li>
-            <li><a href="/categoria/text">Link</a></li>
-            <li><a href="/categoria/form">Dropdown</a></li>
-            <li><a href= "/categoria/disabled">Disabled</li>
-        </ul>
+      <strong>Navbar</strong>
+      <a href="/html/">Home</a>
+      <a href="/css/">Link</a>
+      <select>
+        <option value="default">Dropdown</option>
+        <option value="articles">Articles</option>
+        <option value="articles">Blog</option>
+        <option value="articles">Contacts</option>
+      </select>
+      <button disabled>Disabled</button>
+      <label for name="search">Search</label>
+      <input
+        type="search"
+        name="search"
+        required
+        placeholder="Articles,Link & Other"
+        maxlength="50"
+        minlength="2"
+      />
+      <span>&#129504; Develhope</span>
     </nav>
-</body>
+  </body>
 </html>
